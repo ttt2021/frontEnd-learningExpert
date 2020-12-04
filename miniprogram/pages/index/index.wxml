@@ -2,10 +2,21 @@
 <view class="container">
   <view class="header">
     <view class="search">
-      <van-search value="{{ value }}" shape="round" background="#A5D63F" placeholder="请输入搜索关键词"/>
+      <van-search value="{{ value }}" shape="round" background="#A5D63F" placeholder="请输入搜索关键词" bind:change="onChange" bind:search="onSearch" />
     </view>
     <view class="lunbo">
       <view class="lunbo-pic">
+        <swiper class="lunbo-content" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{{indicatorColor}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" circular="{{circular}}">
+          <block wx:for="{{img}}" wx:key="imgIndex">
+            <swiper-item>
+              <image class="pic" mode="aspectFill" src="{{item.image}}" />
+              <view class="swiper-mask"></view>
+              <view class="swiper-desc">
+                <text>{{item.title}}</text>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
       </view>
     </view>
   </view>
