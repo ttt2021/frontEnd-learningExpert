@@ -8,7 +8,7 @@
       <view class="lunbo-pic">
         <swiper class="lunbo-content" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{{indicatorColor}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" circular="{{circular}}">
           <block wx:for="{{img}}" wx:key="imgIndex">
-            <swiper-item>
+            <swiper-item class="swiperItem">
               <image class="pic" mode="aspectFill" src="{{item.image}}" />
               <view class="swiper-mask"></view>
               <view class="swiper-desc">

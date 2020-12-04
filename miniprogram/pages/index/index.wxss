@@ -14,6 +14,7 @@
   /* height: 300rpx; */
   padding: 20rpx;
 }
+
 /* .lunbo-pic {
   border: 1px solid #000; 
   height: 300rpx;
@@ -21,11 +22,19 @@
   box-shadow: 10rpx;
 } */
 
+.lunbo-pic .lunbo-content {
+  border-radius: 10rpx;
+}
+
 .lunbo-pic .lunbo-content .pic {
   height: 300rpx;
   width: 100%;
   border-radius: 10rpx;
   box-shadow: 10rpx;
+}
+
+.swiperItem {
+  border-radius: 10rpx;
 }
 
 .swiper-mask {
@@ -35,6 +44,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  border-radius: 10rpx;
 }
 
 .swiper-desc {
