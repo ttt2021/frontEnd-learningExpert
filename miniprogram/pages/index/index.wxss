@@ -1,18 +1,19 @@
 /* miniprogram/pages/index/index.wxss */
 .header {
   width: 100%;
-}
-.search {
-  width: 100%;
   /* border: 1px solid #000; */
-  /* display: flex; */
 }
+/* .search {
+  width: 100%;
+  border: 1px solid #000;
+  display: flex;
+} */
 .lunbo {
   /* border: 1px solid #000; */
   /* 渐变 实现上面绿色下面灰色 */
   background: linear-gradient(to bottom, #A5D63F 0%, #A5D63F 50%, #e0e0e0 51%, #e0e0e0 100%);
   /* height: 300rpx; */
-  padding: 20rpx;
+  /* padding: 20rpx; */
 }
 
 /* .lunbo-pic {
@@ -30,7 +31,7 @@
 .lunbo-pic .lunbo-content .pic {
   height: 300rpx;
   width: 100%;
-  border-radius: 10rpx;
+  /* border-radius: 10rpx; */
   box-shadow: 10rpx;
   /* border: 1px solid #000; */
 }
@@ -47,12 +48,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 10rpx;
+  /* border-radius: 10rpx; */
 }
 
 .swiper-desc {
   position: absolute;
-  border-radius: 10rpx;
+  /* border-radius: 10rpx; */
   top: 0;
   right: 0;
   left: 0;
@@ -68,4 +69,114 @@
   text-shadow: 0px 0px 16px #646d75;
   line-height: 480rpx;
   text-align: center;
+}
+
+.clockIn {
+  width: 100%;
+  padding: 20rpx 0;
+  background-color: #e8e8e8;
+  /* border: 1px solid #000; */
+}
+
+.clockIn .clock-content {
+  /* border: 1px solid #000; */
+  /* height: 200rpx; */
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+.clockBtn {
+  margin: 0 auto;
+  width: 160rpx;
+  height: 160rpx;
+  /* border: 2px solid #a0a0a0; */
+  border-radius: 50%;
+  background-color: #33ffcc;
+}
+
+.clockBtn-content {
+  height: 160rpx;
+  /* width: 160rpx; */
+  line-height: 160rpx;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50%;
+  border: none;
+}
+
+.clock-content .button-hover {
+  background-color: #33cccc;
+}
+
+.dateTime {
+  margin-top: 18rpx;
+  font-size: 24rpx;
+  color: #a8a8a8;
+}
+
+.date-time {
+  margin-right: 15rpx;
+}
+
+.clocked-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15rpx;
+}
+
+.clocked-title .name {
+  height: 45rpx;
+  line-height: 45rpx;
+  margin-left: 15rpx;
+  color: #99ccff;
+  font-weight: 500;
+  /* border: 1px solid #000; */
+}
+
+.clocked-share {
+  margin-bottom: 20rpx;
+}
+
+.share-desc {
+  font-size: 20rpx;
+  color: #a0a0a0;
+  margin-bottom: 10rpx;
+}
+
+.share-btn .share {
+  width: 240rpx;
+  border: 1.2px solid #6699cc;
+  font-size: 30rpx;
+  border-radius: 50px;
+  background-color: #ccffff;
+  color: #6699cc;
+  font-weight: 500;
+}
+
+.clocked-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 实现几个头像部分重叠 */
+.userImage .user-pic {
+  box-shadow: 0 0 0 1px #fff;
+  margin-right: -22rpx !important;
+}
+
+.user-pic {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  position: relative;
+}
+
+.userDesc {
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  color: #909090;
 }

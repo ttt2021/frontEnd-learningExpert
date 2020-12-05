@@ -1,23 +1,106 @@
 <!--miniprogram/pages/index/index.wxml-->
 <view class="container">
-  <view class="header">
+	<!-- 首页头部 -->
+	<view class="header">
+
+		<!-- 首页搜索框 -->
+		<!--
     <view class="search">
-      <van-search value="{{ value }}" shape="round" background="#A5D63F" placeholder="请输入搜索关键词" bind:change="onChange" bind:search="onSearch" />
-    </view>
-    <view class="lunbo">
-      <view class="lunbo-pic">
-        <swiper class="lunbo-content" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{{indicatorColor}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" circular="{{circular}}">
-          <block wx:for="{{img}}" wx:key="imgIndex">
-            <swiper-item class="swiperItem">
-              <image class="pic" mode="aspectFill" src="{{item.image}}" />
-              <view class="swiper-mask"></view>
-              <view class="swiper-desc">
-                <text>{{item.title}}</text>
-              </view>
-            </swiper-item>
-          </block>
-        </swiper>
-      </view>
-    </view>
-  </view>
+			<van-search
+			 value="{{ value }}"
+			 shape="round"
+			 background="#A5D63F"
+			 placeholder="请输入搜索关键词"
+			 bind:change="onChange"
+			 bind:search="onSearch"
+			/>
+		</view>
+    -->
+
+		<!-- 首页轮播图 -->
+		<view class="lunbo">
+			<view class="lunbo-pic">
+				<swiper
+				 class="lunbo-content"
+				 indicator-active-color="{{indicatorActiveColor}}"
+				 indicator-color="{{indicatorColor}}"
+				 indicator-dots="{{indicatorDots}}"
+				 autoplay="{{autoplay}}"
+				 duration="{{duration}}"
+				 interval="{{interval}}"
+				 circular="{{circular}}"
+				>
+					<block wx:for="{{img}}" wx:key="imgIndex">
+						<swiper-item class="swiperItem">
+							<image
+							 class="pic"
+							 mode="aspectFill"
+							 src="{{item.image}}"
+							/>
+							<view class="swiper-mask"></view>
+							<view class="swiper-desc">
+								<text>{{item.title}}</text>
+							</view>
+						</swiper-item>
+					</block>
+				</swiper>
+			</view>
+		</view>
+		<!-- 首页通知栏 -->
+		<view class="natice">
+			<van-notice-bar
+			 left-icon="volume-o"
+			 text="{{natice}}"
+			 background="#ffffff"
+			/>
+		</view>
+	</view>
+
+	<!-- 首页打卡区 -->
+	<view class="clockIn">
+		<view class="clock-content">
+			<!-- 打卡界面 -->
+			<view class="clockBtn" style="display: {{clock}};">
+				<button class="clockBtn-content" bindtap="clickClock">打卡</button>
+			</view>
+			<!-- 已打卡界面 -->
+			<view class="clockedIn" style="display: {{clocked}};">
+				<view class="clocked-title">
+					<view class="icon">
+						<van-icon
+						 name="passed"
+						 color="#99ccff"
+						 size="45rpx"
+						/>
+					</view>
+					<view class="name">已打卡</view>
+				</view>
+				<view class="clocked-share">
+					<view class="share-desc">快去邀请你的小伙伴来一起学习吧~~~</view>
+					<view class="share-btn">
+						<button class="share" open-type="share">去分享</button>
+					</view>
+				</view>
+				<view class="clocked-desc">
+					<view class="userImage">
+						<image class="user-pic" src="../../images/1.jpg"></image>
+						<image class="user-pic" src="../../images/2.jpg"></image>
+						<image class="user-pic" src="../../images/3.jpg"></image>
+						<image class="user-pic" src="../../images/4.jpg"></image>
+						<image class="user-pic" src="../../images/5.jpg"></image>
+					</view>
+					<view class="userDesc">今日打卡第23名，比97%的小伙伴更勤奋</view>
+				</view>
+			</view>
+
+			<!-- 日期时间 星期几 -->
+			<view class="dateTime">
+				<span class="date-time">{{currentTime}}</span>
+				<span class="weekday">{{weekday}}</span>
+			</view>
+		</view>
+	</view>
+
+	<!-- 首页面经分类区  宫格形式 -->
 </view>
+
