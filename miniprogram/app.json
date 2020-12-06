@@ -4,13 +4,13 @@
         "pages/community/community",
         "pages/notes/notes",
         "pages/me/me",
-        "pages/clocked/clocked"
+        "components/interview/interview"
     ],
     "window": {
         "backgroundColor": "#f6f6f6",
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#A5D63F",
-        "navigationBarTitleText": "前端圣典",
+        "navigationBarTitleText": "前端学习小能手",
         "navigationBarTextStyle": "white"
     },
     "tabBar": {
@@ -19,7 +19,7 @@
         "list": [
             {
                 "pagePath": "pages/index/index",
-                "text": "首页",
+                "text": "面经",
                 "iconPath": "images/index.png",
                 "selectedIconPath": "images/index-selected.png"
             },

@@ -11,7 +11,7 @@
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
 
-## 前端圣典 frontEnd-scripture
+## 前端学习小能手 frontEnd-learningExpert
   一个关于前端学习旅程及面试提点的云开发小程序
 
 - 模块
@@ -35,7 +35,7 @@
         时间会进行实时更新
     4. 面经分类 --- 宫格
 
-  - 社区
+  - 时钟/社区
   
   - 个人笔记
 

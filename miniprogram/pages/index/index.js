@@ -1,5 +1,6 @@
 // miniprogram/pages/index/index.js
 const dateTime = require("../../base/time.js");
+const interviewUrl = require('../../base/interviewUrl.js')
 Page({
 
 	/**
@@ -36,18 +37,22 @@ Page({
 				title: '计算属性和普通属性有什么区别'
 			}
 		],
+		clockDesc: '千里之行，始于足下，快来学习打卡吧',
 		natice: '欢迎来到前端圣典！！！',
 		clock: 'visible',
 		clocked: 'none',
 		currentTime: '2020/12/6',
-		weekday: '星期日'
+		weekday: '星期日',
+		cellHeight: '240rpx',
+		items: []
 	},
 
 	clickClock (e) {
 		// console.log(e)
 		this.setData({
 			clock: 'none',
-			clocked: 'visible'
+			clocked: 'visible',
+			clockDesc: '今日打卡第23名，比97%的小伙伴更勤奋'
 		})
 		// console.log(this.data.clock, this.data.clocked)
 		// 获取数据存储中的星期几
@@ -55,13 +60,15 @@ Page({
 		let weekday= this.data.weekday
 		let clock = this.data.clock
 		let clocked = this.data.clocked
+		let clockDesc = this.data.clockDesc
 		// console.log(typeof(data))
 		wx.setStorage({
 			key: 'getData',
 			data: {
 				'weekday': weekday,
 				'clock': clock,
-				'clocked': clocked
+				'clocked': clocked,
+				'clockDesc': clockDesc
 			}
 		})
 	},
@@ -114,10 +121,33 @@ Page({
 			that.setData({
 				weekday: weekday,
 				clock: 'visible',
-				clocked: 'none'
+				clocked: 'none',
+				clockDesc: '千里之行，始于足下，快来学习打卡吧'
 			})
 		}
 		// console.log(that.data)
+
+		// 宫格
+		console.log(interviewUrl.items) // 宫格数据
+		let grideItem = []
+		let row = []
+		let len = interviewUrl.items.length 
+		// console.log(len)
+		len = Math.floor((len + 2) / 3) * 3
+		for (let i = 0; i < len; i++) {
+			if ((i + 1) % 3 == 0) {
+				row.push(interviewUrl.items[i])
+				grideItem.push(row)
+				row = []
+				continue
+			} else {
+				row.push(interviewUrl.items[i])
+			}
+		}
+		that.setData({
+			items: grideItem
+		})
+		console.log(that.data.items)
 	},
 
 	getWeekday() {
@@ -152,7 +182,8 @@ Page({
 				that.setData({
 					weekday: res.data.weekday || '星期日',
 					clock: res.data.clock || 'visible',
-					clocked: res.data.clocked || 'none'
+					clocked: res.data.clocked || 'none',
+					clockDesc: res.data.clockDesc || '千里之行，始于足下，快来学习打卡吧'
 				})
 				// if (res.data !== that.data.weekday) {
 				// 	that.setData({

@@ -180,3 +180,55 @@
   font-size: 24rpx;
   color: #909090;
 }
+
+.interview {
+  width: 100%;
+  text-align: center;
+}
+
+.interview .classification {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* box-sizing: border-box; 
+  align-items: center;
+  justify-content: center; */
+}
+
+.classification .container {
+  width: 100%;
+  height: 240rpx;
+  display: flex;
+  flex-direction: row;
+  /* box-sizing: border-box; */
+  /* align-items: center; 
+  justify-content: center; */
+  justify-content: space-around;
+}
+
+.interview-item {
+  height: 100%;
+  width: 33.33%;
+  border: 1px solid #ddd;
+  /* position: relative; */
+}
+
+.classification .container .pic {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.classification .container .content {
+  /* border: 1px solid #000; */
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto; */
+  margin-top: 56rpx;
+}
+
+.name-wrapper .name {
+  font-size: 30rpx;
+}

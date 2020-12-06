@@ -1,4 +1,5 @@
 <!--miniprogram/pages/index/index.wxml-->
+<import src="../../base/cell.wxml"></import>
 <view class="container">
 	<!-- 首页头部 -->
 	<view class="header">
@@ -81,6 +82,7 @@
 						<button class="share" open-type="share">去分享</button>
 					</view>
 				</view>
+				<!--
 				<view class="clocked-desc">
 					<view class="userImage">
 						<image class="user-pic" src="../../images/1.jpg"></image>
@@ -91,8 +93,19 @@
 					</view>
 					<view class="userDesc">今日打卡第23名，比97%的小伙伴更勤奋</view>
 				</view>
+				-->
 			</view>
 
+			<view class="clocked-desc">
+				<view class="userImage">
+					<image class="user-pic" src="../../images/1.jpg"></image>
+					<image class="user-pic" src="../../images/2.jpg"></image>
+					<image class="user-pic" src="../../images/3.jpg"></image>
+					<image class="user-pic" src="../../images/4.jpg"></image>
+					<image class="user-pic" src="../../images/5.jpg"></image>
+				</view>
+				<view class="userDesc">{{clockDesc}}</view>
+			</view>
 			<!-- 日期时间 星期几 -->
 			<view class="dateTime">
 				<span class="date-time">{{currentTime}}</span>
@@ -102,5 +115,18 @@
 	</view>
 
 	<!-- 首页面经分类区  宫格形式 -->
+	<view class="interview">
+		<view class="classification">
+			<view
+			 class="container"
+			 wx:for="{{items}}"
+			 wx:key="index"
+			>
+				<template is="cell" data="{{...item[0], cellHeight}}"></template>
+				<template is="cell" data="{{...item[1], cellHeight}}"></template>
+				<template is="cell" data="{{...item[2], cellHeight}}"></template>
+			</view>
+		</view>
+	</view>
 </view>
 

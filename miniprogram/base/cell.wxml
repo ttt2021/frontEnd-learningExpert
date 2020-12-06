@@ -1,0 +1,19 @@
+<template name="cell">
+	<navigator
+	 class="interview-item"
+	 url="{{interviewUrl}}"
+	 style="height:{{cellHeight}}"
+	 open-type="navigate"
+	 hover-class="navigator-hover"
+	>
+		<view class="content">
+			<view class="{{text==null || text.length==0 ? 'pic-no-wrapper' : 'pic-wrapper'}}">
+				<image class="pic" src="{{picUrl}}" />
+			</view>
+			<view class="name-wrapper">
+				<text class="name">{{text}}</text>
+			</view>
+		</view>
+	</navigator>
+</template>
+
