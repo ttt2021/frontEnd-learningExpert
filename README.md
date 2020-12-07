@@ -33,7 +33,27 @@
             - 在onShow生命周期中，调用wx.getStorage()，使得每一次跳到该界面时都会被调用，用户体验性更好，而onLoad()只会加载一次
       - 获取当前的实时日期时间及星期几
         时间会进行实时更新
-    4. 面经分类 --- 宫格
+    4. 面经分类 --- 九宫格
+      - html
+      - css
+      - javascript
+      - vue
+      - react
+      - node
+      - 工程化
+      - 网络&安全
+      - webpack
+      - 算法
+      - 编程题
+      - 设计模式
+      - 小程序
+      - typeScript
+      - docker
+      - git 
+      - linux
+      - go 
+      - flutter
+      - 其他
 
   - 时钟/社区
   

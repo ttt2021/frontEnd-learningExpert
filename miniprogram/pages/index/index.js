@@ -125,7 +125,7 @@ Page({
 				clockDesc: '千里之行，始于足下，快来学习打卡吧'
 			})
 		}
-		// console.log(that.data)
+		console.log(that.data)
 
 		// 宫格
 		console.log(interviewUrl.items) // 宫格数据
@@ -215,7 +215,14 @@ Page({
 	 * 页面相关事件处理函数--监听用户下拉动作
 	 */
 	onPullDownRefresh: function () {
-
+		// json文件中
+		// "backgroundTextStyle": "dark",
+  	// "backgroundColor": "#eeeeee",
+		// "enablePullDownRefresh": true
+		
+		// setTimeout(() => {
+		// 	wx.stopPullDownRefresh(); //停止下拉元点
+		// }, 1000)
 	},
 
 	/**

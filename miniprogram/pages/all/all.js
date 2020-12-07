@@ -1,33 +1,18 @@
-// pages/me/me.js
-const app = getApp()
+// miniprogram/pages/all/all.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-			avatarUrl: '../../images/user-unlogin.png',
-      userInfo: {},
-      hasUserInfo: false
-		},
-		
-		onGetUserInfo(e) {
-			console.log(e)
-			if (e.detail.userInfo) {
-				app.globalData.userInfo = e.detail.userInfo
-				this.setData({
-					avatarUrl: e.detail.userInfo.avatarUrl,
-					userInfo: e.detail.userInfo,
-					hasUserInfo: true
-				})
-			}
-		},
+
+    },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-      
+
     },
 
     /**
@@ -41,9 +26,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-			wx.setNavigationBarTitle({
-        title: '个人中心'
-      })
+
     },
 
     /**

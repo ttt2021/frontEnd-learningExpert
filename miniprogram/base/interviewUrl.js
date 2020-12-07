@@ -2,47 +2,47 @@ const items = [
   {
     text: '全部',
     picUrl: '../../images/all.png',
-    interviewUrl: '../me/me'
+    interviewUrl: '../all/all'
+  },
+  {
+    text: 'html',
+    picUrl: '../../images/html.png',
+    interviewUrl: '../all/all'
+  },
+  {
+    text: 'css',
+    picUrl: '../../images/css.png',
+    interviewUrl: '../all/all'
+  },
+  {
+    text: 'javascript',
+    picUrl: '../../images/javascript.png',
+    interviewUrl: '../all/all'
   },
   {
     text: 'vue',
     picUrl: '../../images/vue.png',
-    interviewUrl: '../me/me'
+    interviewUrl: '../all/all'
   },
   {
     text: 'react',
     picUrl: '../../images/react.jpg',
-    interviewUrl: '../me/me'
+    interviewUrl: '../all/all'
   },
   {
-    text: '全部',
-    picUrl: '../../images/all.png',
-    interviewUrl: '../me/me'
+    text: 'node',
+    picUrl: '../../images/node.png',
+    interviewUrl: '../all/all'
   },
   {
-    text: 'vue',
-    picUrl: '../../images/vue.png',
-    interviewUrl: '../me/me'
+    text: '算法',
+    picUrl: '../../images/arithmetic.png',
+    interviewUrl: '../all/all'
   },
   {
-    text: 'react',
-    picUrl: '../../images/react.jpg',
-    interviewUrl: '../me/me'
-  },
-  {
-    text: '全部',
-    picUrl: '../../images/all.png',
-    interviewUrl: '../me/me'
-  },
-  {
-    text: 'vue',
-    picUrl: '../../images/vue.png',
-    interviewUrl: '../me/me'
-  },
-  {
-    text: 'react',
-    picUrl: '../../images/react.jpg',
-    interviewUrl: '../me/me'
+    text: '网络&安全',
+    picUrl: '../../images/online.png',
+    interviewUrl: '../all/all'
   }
 ]
 

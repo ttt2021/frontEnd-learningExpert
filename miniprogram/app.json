@@ -1,10 +1,10 @@
 {
     "pages": [
+        "pages/me/me",
         "pages/index/index",
         "pages/community/community",
         "pages/notes/notes",
-        "pages/me/me",
-        "components/interview/interview"
+        "pages/all/all"
     ],
     "window": {
         "backgroundColor": "#f6f6f6",

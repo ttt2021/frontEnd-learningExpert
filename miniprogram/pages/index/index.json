@@ -2,7 +2,6 @@
   "usingComponents": {
     "van-search": "@vant/weapp/search/index",
     "van-notice-bar": "@vant/weapp/notice-bar/index",
-    "van-icon": "@vant/weapp/icon/index",
-    "interview": "../../components/interview/interview"
+    "van-icon": "@vant/weapp/icon/index"
   }
 }
