@@ -8,7 +8,30 @@ Page({
   data: {
     avatarUrl: '../../images/user-unlogin.png',
     userInfo: {},
-    hasUserInfo: false
+    hasUserInfo: false,
+    columnItems: [
+      {
+        Icon: '../../images/rank.png',
+        name: '热门排行',
+      },
+      {
+        Icon: '../../images/footer.png',
+        name: '最近浏览',
+      },
+      {
+        Icon: '../../images/message.png',
+        name: '留言展板',
+      },
+      {
+        Icon: '../../images/robot.png',
+        name: '智能机器',
+      },
+      {
+        Icon: '../../images/reward.png',
+        name: '赞赏作者',
+      }
+    ],
+    arrowRight: '../../images/arrow-right.png'
   },
 
   onGetUserInfo(e) {

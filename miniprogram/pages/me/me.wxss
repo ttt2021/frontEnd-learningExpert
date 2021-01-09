@@ -12,6 +12,7 @@ page {
   height: 140rpx;
   width: 100%;
   background: #fff;
+  /* background: #A5D63F; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-left: none;
   border-right: none;
@@ -28,6 +29,7 @@ page {
   border-radius: 50%;
   background-size: cover;
   background-color: white;
+  /* margin: 0 auto; */
 }
 
 .userinfo-avatar:after {
@@ -39,8 +41,50 @@ page {
   color: #007aff;
   background-color: white;
   background-size: cover;
+  /* margin: 0 auto; */
 }
 
 .userinfo-nickname::after {
   border: none;
+}
+
+.content {
+  width: 100%;
+  background: #f8f8f8;
+  padding-top: 15rpx;
+}
+
+.column {
+  /* margin: 0 20rpx; */
+  /* border: 1px solid #000; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20rpx;
+}
+
+.column-name {
+  display: flex;
+}
+
+.column-icon {
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+}
+
+.column-pic {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.column-arrow {
+  margin-top: 20rpx;
+}
+
+.column-arrow-icon {
+  width: 60rpx;
+  height: 60rpx;
 }

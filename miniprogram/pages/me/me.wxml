@@ -20,5 +20,24 @@
 			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
 		</block>
 	</view>
+	<view class="content">
+		<view
+		 class="column"
+		 wx:for="{{columnItems}}"
+		 wx:key="index"
+		>
+			<view class="column-name">
+				<view class="column-icon">
+					<image class="column-pic" src="{{item.Icon}}" />
+				</view>
+				<view class="column-title">
+					<text class="column-titleName">{{item.name}}</text>
+				</view>
+			</view>
+			<view class="column-arrow">
+				<image class="column-arrow-icon" src="{{arrowRight}}" />
+			</view>
+		</view>
+	</view>
 </view>
 
