@@ -71,13 +71,13 @@ page {
 }
 
 .column-icon {
-  margin-top: 20rpx;
+  margin-top: 10rpx;
   margin-right: 10rpx;
 }
 
 .column-pic {
-  width: 60rpx;
-  height: 60rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .column-arrow {

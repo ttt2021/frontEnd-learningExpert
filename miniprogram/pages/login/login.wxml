@@ -1,0 +1,26 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="login-container">
+	<image class="login-background" src="../../images/loginBackground.jpg" />
+	<view class="login-contant">
+		<view class="content">
+			<view wx:if="{{canIUse}}">
+				<view class="logo">
+					<image class="logo-icon" src="../../images/logo.png" />
+				</view>
+				<view class="message">
+					<view>申请获取以下权限</view>
+					<text>获取你的公开信息（昵称、头像等）</text>
+				</view>
+				<button
+				 class="login-btn"
+				 type="primary"
+				 open-type="getUserInfo"
+				 lang='zh_CN'
+				 bindgetuserinfo="onGetUserInfo"
+				></button>
+			</view>
+			<view wx:else>请升级微信版本</view>
+		</view>
+	</view>
+</view>
+

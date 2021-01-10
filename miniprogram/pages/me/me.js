@@ -6,9 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    avatarUrl: '../../images/user-unlogin.png',
-    userInfo: {},
-    hasUserInfo: false,
+    // avatarUrl: '../../images/user-unlogin.png',
+    // userInfo: {},
+    // hasUserInfo: false,
     columnItems: [
       {
         Icon: '../../images/rank.png',
@@ -24,7 +24,7 @@ Page({
       },
       {
         Icon: '../../images/robot.png',
-        name: '智能机器',
+        name: '智能聊天',
       },
       {
         Icon: '../../images/reward.png',
@@ -34,23 +34,23 @@ Page({
     arrowRight: '../../images/arrow-right.png'
   },
 
-  onGetUserInfo(e) {
-    console.log(e)
-    if (e.detail.userInfo) {
-      app.globalData.userInfo = e.detail.userInfo
-      this.setData({
-        avatarUrl: e.detail.userInfo.avatarUrl,
-        userInfo: e.detail.userInfo,
-        hasUserInfo: true
-      })
-    }
-  },
+  // onGetUserInfo(e) {
+  //   console.log(e)
+  //   if (e.detail.userInfo) {
+  //     app.globalData.userInfo = e.detail.userInfo
+  //     this.setData({
+  //       avatarUrl: e.detail.userInfo.avatarUrl,
+  //       userInfo: e.detail.userInfo,
+  //       hasUserInfo: true
+  //     })
+  //   }
+  // },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(app)
   },
 
   /**

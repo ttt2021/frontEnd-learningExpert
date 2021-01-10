@@ -1,0 +1,51 @@
+/* miniprogram/pages/login/login.wxss */
+.login-container {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  /* background: #000; */
+}
+
+.login-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.login-contant {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* border: 1px solid #000; */
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 250rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.logo-icon {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.message {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.login-btn {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
