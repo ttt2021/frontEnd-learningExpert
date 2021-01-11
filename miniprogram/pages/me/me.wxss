@@ -7,12 +7,48 @@ page {
 }
 
 .userinfo {
+  width: 100%;
+  height: 300rpx;
   margin-top: -10rpx;
-  /* margin-top: 40rpx; */
+  /* border: 1px solid #000; */
+  background: #A5D63F;
+}
+
+.userinfo-content {
+  margin: 0 auto;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccff99;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.nickname {
+  color: #fff;
+  font-weight: bold;
+}
+
+.userinfo-nickname {
+  background: #A5D63F;
+  text-align: center;
+}
+
+/* .userinfo {
+  margin-top: -10rpx;
   height: 140rpx;
   width: 100%;
   background: #fff;
-  /* background: #A5D63F; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-left: none;
   border-right: none;
@@ -29,7 +65,6 @@ page {
   border-radius: 50%;
   background-size: cover;
   background-color: white;
-  /* margin: 0 auto; */
 }
 
 .userinfo-avatar:after {
@@ -41,12 +76,11 @@ page {
   color: #007aff;
   background-color: white;
   background-size: cover;
-  /* margin: 0 auto; */
 }
 
 .userinfo-nickname::after {
   border: none;
-}
+} */
 
 .content {
   width: 100%;

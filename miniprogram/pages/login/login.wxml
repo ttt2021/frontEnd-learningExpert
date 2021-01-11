@@ -17,7 +17,8 @@
 				 open-type="getUserInfo"
 				 lang='zh_CN'
 				 bindgetuserinfo="onGetUserInfo"
-				></button>
+				>授权登录
+				</button>
 			</view>
 			<view wx:else>请升级微信版本</view>
 		</view>

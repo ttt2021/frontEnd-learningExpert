@@ -7,7 +7,7 @@ Page({
    */
   data: {
     // avatarUrl: '../../images/user-unlogin.png',
-    // userInfo: {},
+    userInfo: {},
     // hasUserInfo: false,
     columnItems: [
       {
@@ -19,8 +19,16 @@ Page({
         name: '最近浏览',
       },
       {
+        Icon: '../../images/collection.png',
+        name: '我的收藏',
+      },
+      {
         Icon: '../../images/message.png',
         name: '留言展板',
+      },
+      {
+        Icon: '../../images/idea.png',
+        name: '大前端技能栈',
       },
       {
         Icon: '../../images/robot.png',
@@ -29,6 +37,14 @@ Page({
       {
         Icon: '../../images/reward.png',
         name: '赞赏作者',
+      },
+      {
+        Icon: '../../images/feedback.png',
+        name: '意见反馈',
+      },
+      {
+        Icon: '../../images/journal.png',
+        name: '更新日志',
       }
     ],
     arrowRight: '../../images/arrow-right.png'
@@ -50,7 +66,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(app)
+    const self = this
+    console.log(app.globalData.userInfo)
+    self.setData({
+      userInfo: app.globalData.userInfo
+    })
   },
 
   /**

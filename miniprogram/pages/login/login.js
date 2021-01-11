@@ -43,14 +43,15 @@ Page({
 							// 	},
 							// })
 							wx.switchTab({
-								url: '/pages/index/index', // 跳转的目标页面的url
+								// url: '/pages/index/index', // 跳转的目标页面的url
+								url: '/pages/me/me', // 跳转的目标页面的url
 								success: (result) => {
 									console.log('授权获取成功，跳转到首页')
 								},
 								fail: () => {
-									Toast.loading({
-										message: '授权失败，请刷新重新授权',
-										forbidClick: true
+									wx.showToast({
+										title: '亲！授权失败哟，请刷新重新授权哦！！！',
+										duration: 1000
 									})
 								}
 							})
@@ -58,10 +59,10 @@ Page({
 					})
 				} else {
 					// 用户没有授权，显示授权界面，这里不进行操作
-					Toast.loading({
-						message: '授权失败，请刷新重新授权',
-						forbidClick: true
-					})
+					// wx.showToast({
+					// 	title: '亲！授权失败哟，请刷新重新授权哦！！！',
+					// 	duration: 1000
+					// })
 				}
 			}
 		})
